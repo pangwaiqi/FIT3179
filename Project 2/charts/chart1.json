@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "url": "data/globalDeathsRanking2019.csv"
+    },
+    "transform": [
+        {
+            "calculate": "datum.Death_Rank > 10 ? 'Above 10' : '10 or Below'",
+            "as": "Rank_Category"
+        },
+        {"filter": "(datum.Death_Rank <= 10 && datum.Death_Rank > 0) || (datum.Death_Rank >= 11)"}
+    ],
+    "layer": [
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "field": "Deaths_All_Types",
+                    "type": "quantitative",
+                    "title": "Number of Deaths"
+                },
+                "y": {
+                    "field": "Country_Name",
+                    "type": "nominal",
+                    "title": "",
+                    "sort": { "encoding": "x", "order": "descending" }
+                },
+                "color": {
+                    "field": "Rank_Category",
+                    "type": "nominal",
+                    "scale": {
+                        "range": ["#60b2ff", "#ffa760"] 
+                    }
+                }
+            }
+        }
+    ],
+    "config": {
+        "background": "#ffffff",
+        "axis": {
+            "titleColor": "#444444",
+            "labelColor": "#444444",
+            "labelFont": "sans-serif",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+        },
+        "legend": {"disable": true}
+    }
+}
