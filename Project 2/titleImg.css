@@ -70,3 +70,7 @@ p {
 .side-padding {
     width: 30px;
 }
+
+.container-next-row {
+    height: 120px;
+}

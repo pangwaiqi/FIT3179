@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {"url": "data/suicidesByGender.csv"},
+    "mark": "line",
+    "encoding": {
+        "x": {"field": "Year", "type": "ordinal"},
+        "y": {"field": "Suicides", "type": "quantitative"},
+        "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["orange", "blue"]}},
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Suicides", "type": "quantitative"},
+          {"field": "Gender", "type": "nominal"}
+        ]
+      }
+  }
