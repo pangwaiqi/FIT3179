@@ -31,7 +31,7 @@
                     "field": "Rank_Category",
                     "type": "nominal",
                     "scale": {
-                        "range": ["#60b2ff", "#ffa760"] 
+                        "range": ["#ffa760", "#60b2ff"] 
                     }
                 }
             }

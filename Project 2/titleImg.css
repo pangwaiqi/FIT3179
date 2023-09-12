@@ -48,7 +48,7 @@ p {
     margin: 5px;
     text-align: center;
     font-family: "Open Sans Regular", sans-serif;
-    color: #858585;
+    color: #505050;
     font-size: 16px;
 }
 
@@ -60,6 +60,10 @@ p {
 
 .container-numbering {
     height: 50px;
+    width: 50px;
+}
+
+.container-numbering-padding {
     width: 50px;
 }
 
