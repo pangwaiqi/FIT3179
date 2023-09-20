@@ -22,6 +22,15 @@ body {
     margin-right: 10px;
 }
 
+#title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0570b0;
+}
+
 h1 {
     text-align: center;
     color: #000000;
@@ -31,13 +40,17 @@ h1 {
 
 p {
     color: #444444;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Tableau Book", sans-serif;
 }
 
 /* Use flexbox to create a row of containers */
 .container-row {
     display: flex;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* Style the individual containers */
@@ -47,9 +60,9 @@ p {
     border: 1px solid #ffffff;
     margin: 5px;
     text-align: center;
-    font-family: "Open Sans Regular", sans-serif;
+    font-family: "Tableau Book", sans-serif;
     color: #505050;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .container-icon {

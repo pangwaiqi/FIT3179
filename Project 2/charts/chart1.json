@@ -14,7 +14,7 @@
     ],
     "layer": [
         {
-            "mark": "bar",
+            "mark": {"type": "bar", "cornerRadiusEnd":8},
             "encoding": {
                 "x": {
                     "field": "Deaths_All_Types",
@@ -33,7 +33,11 @@
                     "scale": {
                         "range": ["#ffa760", "#60b2ff"] 
                     }
-                }
+                },
+                "tooltip": [
+                  {"field": "Country_Name", "type": "nominal", "title": "Country"},
+                  {"field": "Deaths_All_Types", "type": "quantitative", "title": "Total Deaths"}
+                ]
             }
         }
     ],
