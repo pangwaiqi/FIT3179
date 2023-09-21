@@ -15,9 +15,9 @@
         "bind": {
           "input": "range",
           "min": 1985,
-          "max": 2019,
+          "max": 2021,
           "step": 1,
-          "name": "Year:   "
+          "name": "Year: "
         }
       },
       {
@@ -111,7 +111,7 @@
               "type": "quantitative",
               "scale": {
                 "type": "threshold",
-                "domain": [20,40,60,80,100],
+                "domain": [20,40,60,80],
                 "range": ["#feedde", "#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
               }
             },
@@ -194,7 +194,7 @@
           "text": {"field": "properties.NAME", "type": "nominal"},
           "opacity": {
             "condition": {
-              "test": "datum['properties.NAME'] == 'Angola' || datum['properties.NAME'] == 'Zimbabwe' || datum['properties.NAME'] == 'South Africa' || datum['properties.NAME'] == 'Botswana' ||  datum['properties.NAME'] == 'Somalia' ||  datum['properties.NAME'] == 'Cameroon'",
+              "test": "datum['properties.NAME'] == 'Russia' || datum['properties.NAME'] == 'Kazakhstan' || datum['properties.NAME'] == 'Hungary'",
               "value": 1
             },
             "value": 0
@@ -202,5 +202,8 @@
         }
       }
     ],
-    "config": {}
+    "config": {
+        "background": "#ffffff",
+        "font": "sans-serif"
+    }
   }

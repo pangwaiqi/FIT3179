@@ -46,9 +46,7 @@
         "axis": {
             "titleColor": "#444444",
             "labelColor": "#444444",
-            "labelFont": "sans-serif",
-            "labelFontSize": 15,
-            "titleFontSize": 15
+            "labelFont": "sans-serif"
         },
         "legend": {"disable": true}
     }
