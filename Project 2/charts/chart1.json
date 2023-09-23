@@ -1,5 +1,5 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
     "width": "container",
     "height": "container",
     "data": {
@@ -45,7 +45,7 @@
         "axis": {
             "titleColor": "#444444",
             "labelColor": "#444444",
-            "labelFont": "sans-serif"
+            "labelFont": "Montserrat, sans-serif"
         },
         "legend": {"disable": true}
     }

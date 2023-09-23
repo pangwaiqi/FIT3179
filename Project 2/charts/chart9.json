@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "data/suicidesByGenderAge.csv"
+    },
+    "width": "container",
+    "height": "container",
+    "mark": {
+      "type": "circle",
+      "opacity": 0.8,
+      "stroke": "black",
+      "strokeWidth": 1
+    },
+    "encoding": {
+      "x": {
+        "field": "Age_Range",
+        "type": "nominal",
+        "axis": {"grid": false},
+        "title": "Age Range"
+      },
+      "y": {"field": "Sex", "type": "nominal", "sort": ["Male", "Female"], "axis": {"title": "Gender"}},
+      "size": {
+        "field": "Suicides",
+        "type": "quantitative",
+        "title": "Suicide Deaths",
+        "legend": {"clipHeight": 40},
+        "scale": {"rangeMax": 5000}
+      },
+      "color": {"field": "Sex", "type": "nominal", 
+      "scale": {"range": ["#ff7f0e","#1f77b4"]}, "legend": null},
+      "tooltip": [
+        {"field": "Sex", "title": "Gender"},
+        {"field": "Suicides", "title": "Suicide Count"}
+      ]
+    }
+  }
+  

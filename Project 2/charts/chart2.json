@@ -158,7 +158,7 @@
           "type": "text",
           "color": "black",
           "fontWeight": "bolder",
-          "fontSize": 13
+          "fontSize": 12
         },
         "encoding": {
           "text": {"field": "Continent", "type": "nominal"},
@@ -203,6 +203,10 @@
     ],
     "config": {
         "background": "#ffffff",
-        "font": "sans-serif"
+        "font": "Montserrat, sans-serif",
+        "axis": {
+          "labelFontSize": 12,
+          "titleFontSize": 12 
+        }
     }
   }
