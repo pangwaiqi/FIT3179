@@ -5,28 +5,16 @@
     "data": {
         "url": "data/globalDeathsRanking2019.csv"
     },
-    "transform": [
-        {
-            "calculate": "datum.Death_Rank > 10 ? 'Above 10' : '10 or Below'",
-            "as": "Rank_Category"
-        },
-        {"filter": "(datum.Death_Rank <= 10 && datum.Death_Rank > 0) || (datum.Death_Rank >= 11)"}
-    ],
+    "encoding": {
+        "x": {"field": "Deaths_All_Types", "type": "quantitative", "title": "Total Deaths"},
+        "y": {"field": "Country_Name", "type": "nominal", "title": "Country",
+              "sort":["China", "India", "United States", "Indonesia", "Russia", "Brazil", "Pakistan", "Bangladesh", "Nigeria", "Japan", "Greece", "Bulgaria", "Georgia", "Kyrgyzstan", "Latvia", "Armenia", "Costa Rica", "Slovenia", "Singapore", "Iceland"]
+            }
+    },
     "layer": [
         {
             "mark": {"type": "bar", "cornerRadiusEnd":8},
             "encoding": {
-                "x": {
-                    "field": "Deaths_All_Types",
-                    "type": "quantitative",
-                    "title": "Number of Deaths"
-                },
-                "y": {
-                    "field": "Country_Name",
-                    "type": "nominal",
-                    "title": "",
-                    "sort": { "encoding": "x", "order": "descending" }
-                },
                 "color": {
                     "field": "Rank_Category",
                     "type": "nominal",
@@ -38,6 +26,17 @@
                   {"field": "Country_Name", "type": "nominal", "title": "Country"},
                   {"field": "Deaths_All_Types", "type": "quantitative", "title": "Total Deaths"}
                 ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "xOffset": 5,
+                "aria": false
+            },
+            "encoding": {
+                "text": {"field": "Deaths_All_Types", "type": "quantitative"}
             }
         }
     ],

@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width":"container",
+    "height":"container",
+    "autosize": "pad",
+    "data": {
+        "values": [
+          {"Continent": "Africa", "Total Deaths": 16564000},
+          {"Continent": "Asia", "Total Deaths": 38127000},
+          {"Continent": "Europe", "Total Deaths": 6122000},
+          {"Continent": "South America", "Total Deaths": 7547000},
+          {"Continent": "North America", "Total Deaths": 5863000},
+          {"Continent": "Australia", "Total Deaths": 1136000}
+        ]
+      },
+      "encoding": {
+        "theta": {"field": "Total Deaths", "type": "quantitative", "stack": true},
+        "color": {"field": "Continent", "type": "nominal", "legend": null}
+      },
+      "layer": [{
+        "mark": {"type": "arc", "outerRadius": 150, "tooltip": true}
+      }, {
+        "mark": {"type": "text", "radius": 180},
+        "encoding": {
+          "text": {"field": "Continent", "type": "nominal"}
+        }
+      }],
+      "config": {
+        "view": {
+           "stroke": "transparent"
+        }
+      }
+  }

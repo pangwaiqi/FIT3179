@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-        "url" : "data/healthExpAUMY.csv"
+        "url" : "data/mhealthExpAUMY.csv"
     },
-    "title": "Health Expenditure",
+    "title": "Mental Health Expenditure",
     "width": "container",
     "height": "container",
     "params": [
@@ -59,7 +59,7 @@
           "y": {
             "field": "previous_sum",
             "type": "quantitative",
-            "title": "Health Expenditure (%)"
+            "title": "Mental Health Expenditure (%)"
           },
           "y2": {"field": "sum"},
           "color": {
