@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "SCATTERPLOT MATRIX - ",
+  "description": "SCATTERPLOT MATRIX - SUICIDE DEATHS VS MENTAL ILLNESSES",
   "repeat": {
     "row": ["SuicideRatePer100000"],
     "column": [
