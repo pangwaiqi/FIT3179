@@ -69,9 +69,9 @@
               "test": "datum.label === 'Start' || datum.label === 'End'",
               "value": "#f7e0b6"
             },
-            {"test": "datum.Country == selected_country && datum.sum < datum.previous_sum", "value": "#f78a64"}
+            {"test": "datum.Country == selected_country && datum.sum < datum.previous_sum", "value": "#ffa760"}
           ],
-          "value": "#5f9ed1"
+          "value": "#60b2ff"
         }
       }
     },

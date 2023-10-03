@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "BUBLE CHART - SUICIDE DEATHS BY GENDER & AGE GROUPS",
+    "description": "BUBBLE CHART - SUICIDE DEATHS BY GENDER & AGE GROUPS",
     "data": {
       "url": "data/suicidesByGenderAge.csv"
     },
@@ -28,7 +28,7 @@
         "scale": {"rangeMax": 5000}
       },
       "color": {"field": "Sex", "type": "nominal", 
-      "scale": {"range": ["#ff7f0e","#1f77b4"]}, "legend": null},
+      "scale": {"range": ["#ffa760","#60b2ff"]}, "legend": null},
       "tooltip": [
         {"field": "Sex", "title": "Gender"},
         {"field": "Suicides", "title": "Suicide Count"}
