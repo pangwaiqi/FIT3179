@@ -4,72 +4,76 @@
   "width": "container",
   "height": "container",
   "data": {
-  "url": "data/mhealthExpAUMY.csv"},
+    "url": "data/mhealthExpAUMY.csv"
+  },
   "title": "Mental Health Expenditure",
   "params": [
-      {
-          "name": "selected_country",
-          "bind": {
-              "input": "select",
-              "options": [null,"Australia","Malaysia"],
-              "labels": ["Select a country", "Australia", "Malaysia"],
-              "name": "Country: "
-          }
+    {
+      "name": "selected_country",
+      "bind": {
+        "input": "select",
+        "options": [null, "Australia", "Malaysia"],
+        "labels": ["Select a country", "Australia", "Malaysia"],
+        "name": "Country: "
       }
+    }
   ],
   "transform": [
-      {"filter": "datum.Country == selected_country"},
-      {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
-      {"window": [{"op": "lead", "field": "label", "as": "lead"}]},
-      {
-          "calculate": "datum.Country == selected_country && datum.lead === null ? datum.label : datum.lead",
-          "as": "lead"
-      },
-      {
-          "calculate": "datum.Country == selected_country && datum.label === 'End' ? 0 : datum.sum - datum.amount",
-          "as": "previous_sum"
-      },
-      {
-          "calculate": "(datum.Country == selected_country && datum.label !== 'Start' && datum.label !== 'End' && datum.amount > 0 ? '+' : '') + datum.amount",
-          "as": "text_amount"
-      },
-      {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"},
-      {
-          "calculate": "datum.Country == selected_country && datum.sum < datum.previous_sum ? datum.sum : ''",
-          "as": "sum_dec"
-      },
-      {
-          "calculate": "datum.Country == selected_country && datum.sum > datum.previous_sum ? datum.sum : ''",
-          "as": "sum_inc"
-      }
+    { "filter": "datum.Country == selected_country" },
+    { "window": [{ "op": "sum", "field": "amount", "as": "sum" }] },
+    { "window": [{ "op": "lead", "field": "label", "as": "lead" }] },
+    {
+      "calculate": "datum.Country == selected_country && datum.lead === null ? datum.label : datum.lead",
+      "as": "lead"
+    },
+    {
+      "calculate": "datum.Country == selected_country && datum.label === 'End' ? 0 : datum.sum - datum.amount",
+      "as": "previous_sum"
+    },
+    {
+      "calculate": "(datum.Country == selected_country && datum.label !== 'Start' && datum.label !== 'End' && datum.amount > 0 ? '+' : '') + datum.amount",
+      "as": "text_amount"
+    },
+    { "calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center" },
+    {
+      "calculate": "datum.Country == selected_country && datum.sum < datum.previous_sum ? datum.sum : ''",
+      "as": "sum_dec"
+    },
+    {
+      "calculate": "datum.Country == selected_country && datum.sum > datum.previous_sum ? datum.sum : ''",
+      "as": "sum_inc"
+    }
   ],
   "encoding": {
     "x": {
       "field": "label",
       "type": "ordinal",
       "sort": null,
-      "axis": {"labelAngle": 0, "title": "Year"},
+      "axis": { "labelAngle": 0, "title": "Year" },
       "title": "Year"
     }
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 45},
+      "mark": { "type": "bar", "size": 45 },
       "encoding": {
         "y": {
           "field": "previous_sum",
           "type": "quantitative",
           "title": "Mental Health Expenditure (%)",
-          "scale": {"domain": [0, 10]}
+          "scale": { "domain": [0, 10] }
         },
-        "y2": {"field": "sum"},
+        "y2": { "field": "sum" },
         "color": {
           "condition": [
             {
               "test": "datum.label === 'Start' || datum.label === 'End'",
               "value": "#f7e0b6"
             },
-            {"test": "datum.Country == selected_country && datum.sum < datum.previous_sum", "value": "#ffa760"}
+            {
+              "test": "datum.Country == selected_country && datum.sum < datum.previous_sum",
+              "value": "#ffa760"
+            }
           ],
           "value": "#60b2ff"
         }
@@ -85,39 +89,48 @@
         "x2Offset": 22.5
       },
       "encoding": {
-        "x2": {"field": "lead"},
-        "y": {"field": "sum", "type": "quantitative"}
+        "x2": { "field": "lead" },
+        "y": { "field": "sum", "type": "quantitative" }
       }
     },
     {
-      "mark": {"type": "text", "dy": -4, "baseline": "bottom"},
+      "mark": { "type": "text", "dy": -4, "baseline": "bottom" },
       "encoding": {
-        "y": {"field": "sum_inc", "type": "quantitative"},
-        "text": {"field": "sum_inc", "type": "nominal", "format":".2f"},
+        "y": { "field": "sum_inc", "type": "quantitative" },
+        "text": { "field": "sum_inc", "type": "nominal", "format": ".2f" },
         "opacity": {
           "condition": {
-              "test": "datum.sum_inc == 0.00", "value": 0
-          }, "value":1
-          }
+            "test": "datum.sum_inc == 0.00",
+            "value": 0
+          },
+          "value": 1
+        }
       }
     },
     {
-      "mark": {"type": "text", "dy": 4, "baseline": "top"},
+      "mark": { "type": "text", "dy": 4, "baseline": "top" },
       "encoding": {
-        "y": {"field": "sum_dec", "type": "quantitative"},
-        "text": {"field": "sum_dec", "type": "nominal","format":".2f"},
+        "y": { "field": "sum_dec", "type": "quantitative" },
+        "text": { "field": "sum_dec", "type": "nominal", "format": ".2f" },
         "opacity": {
           "condition": {
-              "test": "datum.sum_dec == 0.00", "value": 0
-          }, "value":1
-          }
+            "test": "datum.sum_dec == 0.00",
+            "value": 0
+          },
+          "value": 1
+        }
       }
     },
     {
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize":10, "baseline": "middle"},
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 10,
+        "baseline": "middle"
+      },
       "encoding": {
-        "y": {"field": "center", "type": "quantitative"},
-        "text": {"field": "text_amount", "type": "nominal","format": ".2f"},
+        "y": { "field": "center", "type": "quantitative" },
+        "text": { "field": "text_amount", "type": "nominal", "format": ".2f" },
         "color": {
           "condition": [
             {
@@ -125,7 +138,8 @@
               "value": "#725a30"
             },
             {
-              "test": "datum.text_amount < 0.15 && datum.text_amount > -0.15", "value": null
+              "test": "datum.text_amount < 0.15 && datum.text_amount > -0.15",
+              "value": null
             }
           ],
           "value": "white"
@@ -133,15 +147,21 @@
       }
     },
     {
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize":10, "baseline": "middle"},
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 10,
+        "baseline": "middle"
+      },
       "encoding": {
-        "y": {"field": "center", "type": "quantitative"},
-        "text": {"value": "6.13"},
-        "color": {"value": "#725a30"},
+        "y": { "field": "center", "type": "quantitative" },
+        "text": { "value": "6.13" },
+        "color": { "value": "#725a30" },
         "opacity": {
           "condition": [
             {
-              "test": "datum.text_amount == 0.00 && datum.label === 'End' && datum.Country == 'Australia'", "value": 1
+              "test": "datum.text_amount == 0.00 && datum.label === 'End' && datum.Country == 'Australia'",
+              "value": 1
             }
           ],
           "value": 0
@@ -149,15 +169,21 @@
       }
     },
     {
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize":10, "baseline": "middle"},
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "fontSize": 10,
+        "baseline": "middle"
+      },
       "encoding": {
-        "y": {"field": "center", "type": "quantitative"},
-        "text": {"value": "4.23"},
-        "color": {"value": "#725a30"},
+        "y": { "field": "center", "type": "quantitative" },
+        "text": { "value": "4.23" },
+        "color": { "value": "#725a30" },
         "opacity": {
           "condition": [
             {
-              "test": "datum.text_amount == 0.00 && datum.label === 'End' && datum.Country == 'Malaysia'", "value": 1
+              "test": "datum.text_amount == 0.00 && datum.label === 'End' && datum.Country == 'Malaysia'",
+              "value": 1
             }
           ],
           "value": 0
@@ -174,13 +200,14 @@
         "align": "left"
       },
       "encoding": {
-        "text": {"value": ["Obvious upward trend", "in recent years"]},
-        "opacity":{
+        "text": { "value": ["Obvious upward trend", "in recent years"] },
+        "opacity": {
           "condition": [
             {
-              "test": "datum.Country == 'Australia' && datum.label == 2010", "value": 1
+              "test": "datum.Country == 'Australia' && datum.label == 2010",
+              "value": 1
             }
-          ], 
+          ],
           "value": 0
         }
       }
@@ -195,13 +222,14 @@
         "align": "left"
       },
       "encoding": {
-        "text": {"value": ["Huge increase", "in 2010"]},
-        "opacity":{
+        "text": { "value": ["Huge increase", "in 2010"] },
+        "opacity": {
           "condition": [
             {
-              "test": "datum.Country == 'Australia' && datum.label == 2010", "value": 1
+              "test": "datum.Country == 'Australia' && datum.label == 2010",
+              "value": 1
             }
-          ], 
+          ],
           "value": 0
         }
       }
@@ -216,13 +244,19 @@
         "align": "left"
       },
       "encoding": {
-        "text": {"value": ["Expenditure trend remained relatively stable", "and has slight increase in recent years"]},
-        "opacity":{
+        "text": {
+          "value": [
+            "Expenditure trend remained relatively stable",
+            "and has slight increase in recent years"
+          ]
+        },
+        "opacity": {
           "condition": [
             {
-              "test": "datum.Country == 'Malaysia' && datum.label == 2009", "value": 1
+              "test": "datum.Country == 'Malaysia' && datum.label == 2009",
+              "value": 1
             }
-          ], 
+          ],
           "value": 0
         }
       }
@@ -237,17 +271,18 @@
         "align": "left"
       },
       "encoding": {
-        "text": {"value": ["Huge increase", "in 2009"]},
-        "opacity":{
+        "text": { "value": ["Huge increase", "in 2009"] },
+        "opacity": {
           "condition": [
             {
-              "test": "datum.Country == 'Malaysia' && datum.label == 2009", "value": 1
+              "test": "datum.Country == 'Malaysia' && datum.label == 2009",
+              "value": 1
             }
-          ], 
+          ],
           "value": 0
         }
       }
     }
   ],
-  "config": {"text": {"fontWeight": "bold", "color": "#404040"}}
+  "config": { "text": { "fontWeight": "bold", "color": "#404040" } }
 }

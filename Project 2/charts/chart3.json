@@ -1,27 +1,31 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "LINE CHART - GLOBAL SUICIDE TREND BY GENDER FROM 2000 TO 2020",
-    "width": "container",
-    "height": "container",
-    "data": {"url": "data/suicidesByGender.csv"},
-    "mark": "line",
-    "encoding": {
-        "x": {"field": "Year", "type": "ordinal"},
-        "y": {"field": "Suicides", "type": "quantitative"},
-        "color": {"field": "Gender", "type": "nominal", "scale": {"range": ["#ffa760", "#60b2ff"]}},
-        "tooltip": [
-          {"field": "Year", "type": "ordinal"},
-          {"field": "Suicides", "type": "quantitative"},
-          {"field": "Gender", "type": "nominal"}
-        ]
-      },
-      "config": {
-          "background": "#ffffff",
-          "axis": {
-              "titleColor": "#444444",
-              "labelColor": "#444444",
-              "labelFont": "sans-serif"
-          },
-          "legend": {"disable": true}
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "LINE CHART - GLOBAL SUICIDE TREND BY GENDER FROM 2000 TO 2020",
+  "width": "container",
+  "height": "container",
+  "data": { "url": "data/suicidesByGender.csv" },
+  "mark": "line",
+  "encoding": {
+    "x": { "field": "Year", "type": "ordinal" },
+    "y": { "field": "Suicides", "type": "quantitative" },
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": { "range": ["#ffa760", "#60b2ff"] }
+    },
+    "tooltip": [
+      { "field": "Year", "type": "ordinal" },
+      { "field": "Suicides", "type": "quantitative" },
+      { "field": "Gender", "type": "nominal" }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "axis": {
+      "titleColor": "#444444",
+      "labelColor": "#444444",
+      "labelFont": "sans-serif"
+    },
+    "legend": { "disable": true }
   }
+}

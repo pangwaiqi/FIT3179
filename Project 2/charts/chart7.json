@@ -1,46 +1,45 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "BEESWARM CHART?? - SUICIDES BY YEAR AND GENDER",
-    "width": "container",
-    "height": "container",
-    "data": {
-        "url": "data/suicidesByGender.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "BEESWARM CHART?? - SUICIDES BY YEAR AND GENDER",
+  "width": "container",
+  "height": "container",
+  "data": {
+    "url": "data/suicidesByGender.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "opacity": 1,
+    "filled": false
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year"
     },
-    "mark": {
-      "type": "circle",
-      "opacity": 1,
-      "filled": false
+    "y": {
+      "field": "offset",
+      "type": "nominal",
+      "title": null
     },
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal",
-        "title": "Year"
-      },
-      "y": {
-        "field": "offset",
-        "type": "nominal",
-        "title": null
-      },
-      "size": {
-        "field": "Suicides",
-        "type": "quantitative",
-        "title": ["Total number", "of suicides"]
-      },
-      "color": {
-        "field": "Gender",
-        "type": "nominal",
-        "scale": {"range": ["#ff7f0e","#1f77b4"]},
-        "legend": null
-      },
-      "tooltip": [
-        {"field": "Year", "title": "Year"},
-        {"field": "Gender", "title": "Gender"},
-        {"field": "Suicides", "title": "Suicides"}
-      ]
+    "size": {
+      "field": "Suicides",
+      "type": "quantitative",
+      "title": ["Total number", "of suicides"]
     },
-    "config": {
-      "axisX": {"labelAngle": 270} 
-    }
+    "color": {
+      "field": "Gender",
+      "type": "nominal",
+      "scale": { "range": ["#ff7f0e", "#1f77b4"] },
+      "legend": null
+    },
+    "tooltip": [
+      { "field": "Year", "title": "Year" },
+      { "field": "Gender", "title": "Gender" },
+      { "field": "Suicides", "title": "Suicides" }
+    ]
+  },
+  "config": {
+    "axisX": { "labelAngle": 270 }
   }
-  
+}

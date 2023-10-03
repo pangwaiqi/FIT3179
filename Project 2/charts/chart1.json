@@ -1,53 +1,85 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "BAR CHART - COUNTRIES WITH THE HIGHEST & LOWEST TOTAL DEATHS IN 2019",
-    "width": "container",
-    "height": "container",
-    "data": {
-        "url": "data/globalDeathsRanking2019.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "BAR CHART - COUNTRIES WITH THE HIGHEST & LOWEST TOTAL DEATHS IN 2019",
+  "width": "container",
+  "height": "container",
+  "data": {
+    "url": "data/globalDeathsRanking2019.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Deaths_All_Types",
+      "type": "quantitative",
+      "title": "Total Deaths"
     },
-    "encoding": {
-        "x": {"field": "Deaths_All_Types", "type": "quantitative", "title": "Total Deaths"},
-        "y": {"field": "Country_Name", "type": "nominal", "title": "Country",
-              "sort":["China", "India", "United States", "Indonesia", "Russia", "Brazil", "Pakistan", "Bangladesh", "Nigeria", "Japan", "Greece", "Bulgaria", "Georgia", "Kyrgyzstan", "Latvia", "Armenia", "Costa Rica", "Slovenia", "Singapore", "Iceland"]
-            }
-    },
-    "layer": [
-        {
-            "mark": {"type": "bar", "cornerRadiusEnd":8},
-            "encoding": {
-                "color": {
-                    "field": "Rank_Category",
-                    "type": "nominal",
-                    "scale": {
-                        "range": ["#60b2ff","#ffa760"] 
-                    }
-                },
-                "tooltip": [
-                  {"field": "Country_Name", "type": "nominal", "title": "Country"},
-                  {"field": "Deaths_All_Types", "type": "quantitative", "title": "Total Deaths"}
-                ]
-            }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "align": "left",
-                "xOffset": 5,
-                "aria": false
-            },
-            "encoding": {
-                "text": {"field": "Deaths_All_Types", "type": "quantitative"}
-            }
-        }
-    ],
-    "config": {
-        "background": "#ffffff",
-        "axis": {
-            "titleColor": "#444444",
-            "labelColor": "#444444",
-            "labelFont": "Montserrat, sans-serif"
-        },
-        "legend": {"disable": true}
+    "y": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "title": "Country",
+      "sort": [
+        "China",
+        "India",
+        "United States",
+        "Indonesia",
+        "Russia",
+        "Brazil",
+        "Pakistan",
+        "Bangladesh",
+        "Nigeria",
+        "Japan",
+        "Greece",
+        "Bulgaria",
+        "Georgia",
+        "Kyrgyzstan",
+        "Latvia",
+        "Armenia",
+        "Costa Rica",
+        "Slovenia",
+        "Singapore",
+        "Iceland"
+      ]
     }
+  },
+  "layer": [
+    {
+      "mark": { "type": "bar", "cornerRadiusEnd": 8 },
+      "encoding": {
+        "color": {
+          "field": "Rank_Category",
+          "type": "nominal",
+          "scale": {
+            "range": ["#60b2ff", "#ffa760"]
+          }
+        },
+        "tooltip": [
+          { "field": "Country_Name", "type": "nominal", "title": "Country" },
+          {
+            "field": "Deaths_All_Types",
+            "type": "quantitative",
+            "title": "Total Deaths"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "xOffset": 5,
+        "aria": false
+      },
+      "encoding": {
+        "text": { "field": "Deaths_All_Types", "type": "quantitative" }
+      }
+    }
+  ],
+  "config": {
+    "background": "#ffffff",
+    "axis": {
+      "titleColor": "#444444",
+      "labelColor": "#444444",
+      "labelFont": "Montserrat, sans-serif"
+    },
+    "legend": { "disable": true }
+  }
 }
