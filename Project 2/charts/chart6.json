@@ -27,6 +27,34 @@
       "encoding": {
         "text": { "field": "Continent", "type": "nominal" }
       }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": -20,
+        "dy": 58,
+        "yOffset": 0,
+        "align": "left",
+        "fill": "black"
+      },
+      "encoding": {
+        "text": { "value": ["Asia has the highest", "total deaths"] }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": -120,
+        "dy": 58,
+        "yOffset": -60,
+        "align": "left",
+        "fill": "black"
+      },
+      "encoding": {
+        "text": { "value": ["Australia has the", "lowest total deaths"] }
+      }
     }
   ],
   "config": {

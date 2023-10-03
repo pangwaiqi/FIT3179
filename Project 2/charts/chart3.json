@@ -4,21 +4,64 @@
   "width": "container",
   "height": "container",
   "data": { "url": "data/suicidesByGender.csv" },
-  "mark": "line",
-  "encoding": {
-    "x": { "field": "Year", "type": "ordinal" },
-    "y": { "field": "Suicides", "type": "quantitative" },
-    "color": {
-      "field": "Gender",
-      "type": "nominal",
-      "scale": { "range": ["#ffa760", "#60b2ff"] }
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": { "field": "Year", "type": "ordinal" },
+        "y": { "field": "Suicides", "type": "quantitative" },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": { "range": ["#ffa760", "#60b2ff"] }
+        },
+        "tooltip": [
+          { "field": "Year", "type": "ordinal" },
+          { "field": "Suicides", "type": "quantitative" },
+          { "field": "Gender", "type": "nominal" }
+        ]
+      }
     },
-    "tooltip": [
-      { "field": "Year", "type": "ordinal" },
-      { "field": "Suicides", "type": "quantitative" },
-      { "field": "Gender", "type": "nominal" }
-    ]
-  },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": -120,
+        "dy": 58,
+        "yOffset": -120,
+        "align": "left"
+      },
+      "encoding": {
+        "text": { "value": ["Suicides are more common among men"] }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": -120,
+        "dy": 58,
+        "yOffset": 50,
+        "align": "left"
+      },
+      "encoding": {
+        "text": { "value": ["Suicide trend among women are relatively stable"] }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": 0,
+        "dy": 58,
+        "yOffset": -220,
+        "align": "left"
+      },
+      "encoding": {
+        "text": { "value": ["Suicide spike among", "the males in 2011"] }
+      }
+    }
+  ],
   "config": {
     "background": "#ffffff",
     "axis": {

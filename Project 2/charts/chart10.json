@@ -206,7 +206,7 @@
           "text": { "field": "properties.NAME", "type": "nominal" },
           "opacity": {
             "condition": {
-              "test": "datum['properties.NAME'] == 'Lesotho'",
+              "test": "datum['properties.NAME'] == 'Lesotho' || datum['properties.NAME'] == 'Guyana'",
               "value": 1
             },
             "value": 0
