@@ -79,26 +79,26 @@ Algeria,2016,2.61
 Algeria,2017,2.54
 Algeria,2018,2.58
 Algeria,2019,2.6
-Americas,2000,7.73
-Americas,2001,7.98
-Americas,2002,8.02
-Americas,2003,7.93
-Americas,2004,7.9
-Americas,2005,7.88
-Americas,2006,7.87
-Americas,2007,7.93
-Americas,2008,8.09
-Americas,2009,8.15
-Americas,2010,8.13
-Americas,2011,8.28
-Americas,2012,8.26
-Americas,2013,8.23
-Americas,2014,8.41
-Americas,2015,8.55
-Americas,2016,8.72
-Americas,2017,9.16
-Americas,2018,8.97
-Americas,2019,8.99
+United States of America,2000,7.73
+United States of America,2001,7.98
+United States of America,2002,8.02
+United States of America,2003,7.93
+United States of America,2004,7.9
+United States of America,2005,7.88
+United States of America,2006,7.87
+United States of America,2007,7.93
+United States of America,2008,8.09
+United States of America,2009,8.15
+United States of America,2010,8.13
+United States of America,2011,8.28
+United States of America,2012,8.26
+United States of America,2013,8.23
+United States of America,2014,8.41
+United States of America,2015,8.55
+United States of America,2016,8.72
+United States of America,2017,9.16
+United States of America,2018,8.97
+United States of America,2019,8.99
 Angola,2000,17.5554
 Angola,2001,17.4593
 Angola,2002,17.2385
@@ -439,26 +439,26 @@ Bolivia,2016,7.43
 Bolivia,2017,7.17
 Bolivia,2018,6.97
 Bolivia,2019,6.82
-Bosnia and Herzegovina,2000,8.13
-Bosnia and Herzegovina,2001,8.35
-Bosnia and Herzegovina,2002,8.53
-Bosnia and Herzegovina,2003,8.45
-Bosnia and Herzegovina,2004,8.4
-Bosnia and Herzegovina,2005,8.95
-Bosnia and Herzegovina,2006,8.77
-Bosnia and Herzegovina,2007,9.36
-Bosnia and Herzegovina,2008,8.72
-Bosnia and Herzegovina,2009,8.54
-Bosnia and Herzegovina,2010,8.3
-Bosnia and Herzegovina,2011,8.35
-Bosnia and Herzegovina,2012,8.11
-Bosnia and Herzegovina,2013,8.23
-Bosnia and Herzegovina,2014,8.2
-Bosnia and Herzegovina,2015,8.33
-Bosnia and Herzegovina,2016,8.13
-Bosnia and Herzegovina,2017,8.07
-Bosnia and Herzegovina,2018,8.18
-Bosnia and Herzegovina,2019,8.25
+Bosnia and Herz.,2000,8.13
+Bosnia and Herz.,2001,8.35
+Bosnia and Herz.,2002,8.53
+Bosnia and Herz.,2003,8.45
+Bosnia and Herz.,2004,8.4
+Bosnia and Herz.,2005,8.95
+Bosnia and Herz.,2006,8.77
+Bosnia and Herz.,2007,9.36
+Bosnia and Herz.,2008,8.72
+Bosnia and Herz.,2009,8.54
+Bosnia and Herz.,2010,8.3
+Bosnia and Herz.,2011,8.35
+Bosnia and Herz.,2012,8.11
+Bosnia and Herz.,2013,8.23
+Bosnia and Herz.,2014,8.2
+Bosnia and Herz.,2015,8.33
+Bosnia and Herz.,2016,8.13
+Bosnia and Herz.,2017,8.07
+Bosnia and Herz.,2018,8.18
+Bosnia and Herz.,2019,8.25
 Botswana,2000,46.2526
 Botswana,2001,44.6795
 Botswana,2002,42.1921
@@ -659,26 +659,26 @@ Cape Verde,2016,16.5303
 Cape Verde,2017,16.1628
 Cape Verde,2018,15.955
 Cape Verde,2019,15.2308
-Central African Republic,2000,32.5032
-Central African Republic,2001,30.7429
-Central African Republic,2002,30.4289
-Central African Republic,2003,29.0621
-Central African Republic,2004,28.047
-Central African Republic,2005,27.2357
-Central African Republic,2006,28.1402
-Central African Republic,2007,27.6996
-Central African Republic,2008,27.2927
-Central African Republic,2009,28.5257
-Central African Republic,2010,28.1199
-Central African Republic,2011,27.5691
-Central African Republic,2012,26.6374
-Central African Republic,2013,26.9504
-Central African Republic,2014,27.5868
-Central African Republic,2015,26.3075
-Central African Republic,2016,25.2506
-Central African Republic,2017,25.7334
-Central African Republic,2018,23.6493
-Central African Republic,2019,22.963
+Central African Rep.,2000,32.5032
+Central African Rep.,2001,30.7429
+Central African Rep.,2002,30.4289
+Central African Rep.,2003,29.0621
+Central African Rep.,2004,28.047
+Central African Rep.,2005,27.2357
+Central African Rep.,2006,28.1402
+Central African Rep.,2007,27.6996
+Central African Rep.,2008,27.2927
+Central African Rep.,2009,28.5257
+Central African Rep.,2010,28.1199
+Central African Rep.,2011,27.5691
+Central African Rep.,2012,26.6374
+Central African Rep.,2013,26.9504
+Central African Rep.,2014,27.5868
+Central African Rep.,2015,26.3075
+Central African Rep.,2016,25.2506
+Central African Rep.,2017,25.7334
+Central African Rep.,2018,23.6493
+Central African Rep.,2019,22.963
 Chad,2000,15.7134
 Chad,2001,15.7806
 Chad,2002,15.7815
@@ -779,26 +779,26 @@ Comoros,2016,8.72
 Comoros,2017,8.58
 Comoros,2018,8.48
 Comoros,2019,8.46
-Congo,2000,24.7479
-Congo,2001,21.8693
-Congo,2002,19.7744
-Congo,2003,18.4116
-Congo,2004,18.2502
-Congo,2005,17.3644
-Congo,2006,17.1553
-Congo,2007,16.5911
-Congo,2008,15.9618
-Congo,2009,16.3023
-Congo,2010,15.7899
-Congo,2011,15.3024
-Congo,2012,15.5041
-Congo,2013,14.4866
-Congo,2014,13.5276
-Congo,2015,12.4629
-Congo,2016,12.2866
-Congo,2017,11.894
-Congo,2018,11.63
-Congo,2019,11.6181
+Dem. Rep. Congo,2000,24.7479
+Dem. Rep. Congo,2001,21.8693
+Dem. Rep. Congo,2002,19.7744
+Dem. Rep. Congo,2003,18.4116
+Dem. Rep. Congo,2004,18.2502
+Dem. Rep. Congo,2005,17.3644
+Dem. Rep. Congo,2006,17.1553
+Dem. Rep. Congo,2007,16.5911
+Dem. Rep. Congo,2008,15.9618
+Dem. Rep. Congo,2009,16.3023
+Dem. Rep. Congo,2010,15.7899
+Dem. Rep. Congo,2011,15.3024
+Dem. Rep. Congo,2012,15.5041
+Dem. Rep. Congo,2013,14.4866
+Dem. Rep. Congo,2014,13.5276
+Dem. Rep. Congo,2015,12.4629
+Dem. Rep. Congo,2016,12.2866
+Dem. Rep. Congo,2017,11.894
+Dem. Rep. Congo,2018,11.63
+Dem. Rep. Congo,2019,11.6181
 Costa Rica,2000,6.85
 Costa Rica,2001,5.57
 Costa Rica,2002,7.25
@@ -819,26 +819,26 @@ Costa Rica,2016,7.29
 Costa Rica,2017,5.79
 Costa Rica,2018,6.79
 Costa Rica,2019,7.62
-Cote d'Ivoire,2000,23.9869
-Cote d'Ivoire,2001,22.9329
-Cote d'Ivoire,2002,22.0713
-Cote d'Ivoire,2003,21.7282
-Cote d'Ivoire,2004,21.2081
-Cote d'Ivoire,2005,20.3474
-Cote d'Ivoire,2006,20.468
-Cote d'Ivoire,2007,20.2639
-Cote d'Ivoire,2008,19.0004
-Cote d'Ivoire,2009,19.4149
-Cote d'Ivoire,2010,20.0145
-Cote d'Ivoire,2011,19.607
-Cote d'Ivoire,2012,19.7371
-Cote d'Ivoire,2013,19.4513
-Cote d'Ivoire,2014,18.5472
-Cote d'Ivoire,2015,17.7148
-Cote d'Ivoire,2016,16.9954
-Cote d'Ivoire,2017,16.3711
-Cote d'Ivoire,2018,15.929
-Cote d'Ivoire,2019,15.6586
+Côte d'Ivoire,2000,23.9869
+Côte d'Ivoire,2001,22.9329
+Côte d'Ivoire,2002,22.0713
+Côte d'Ivoire,2003,21.7282
+Côte d'Ivoire,2004,21.2081
+Côte d'Ivoire,2005,20.3474
+Côte d'Ivoire,2006,20.468
+Côte d'Ivoire,2007,20.2639
+Côte d'Ivoire,2008,19.0004
+Côte d'Ivoire,2009,19.4149
+Côte d'Ivoire,2010,20.0145
+Côte d'Ivoire,2011,19.607
+Côte d'Ivoire,2012,19.7371
+Côte d'Ivoire,2013,19.4513
+Côte d'Ivoire,2014,18.5472
+Côte d'Ivoire,2015,17.7148
+Côte d'Ivoire,2016,16.9954
+Côte d'Ivoire,2017,16.3711
+Côte d'Ivoire,2018,15.929
+Côte d'Ivoire,2019,15.6586
 Croatia,2000,16.2999
 Croatia,2001,15.3325
 Croatia,2002,14.9037
@@ -919,26 +919,26 @@ Czechia,2016,10.3358
 Czechia,2017,11.1969
 Czechia,2018,10.8278
 Czechia,2019,9.48
-Democratic Republic of Congo,2000,14.4972
-Democratic Republic of Congo,2001,14.3679
-Democratic Republic of Congo,2002,14.2237
-Democratic Republic of Congo,2003,14.4037
-Democratic Republic of Congo,2004,14.2258
-Democratic Republic of Congo,2005,14.0561
-Democratic Republic of Congo,2006,13.8892
-Democratic Republic of Congo,2007,13.4235
-Democratic Republic of Congo,2008,13.4051
-Democratic Republic of Congo,2009,13.6352
-Democratic Republic of Congo,2010,13.4972
-Democratic Republic of Congo,2011,13.3243
-Democratic Republic of Congo,2012,13.0107
-Democratic Republic of Congo,2013,12.7731
-Democratic Republic of Congo,2014,12.5667
-Democratic Republic of Congo,2015,12.2673
-Democratic Republic of Congo,2016,12.0872
-Democratic Republic of Congo,2017,12.0358
-Democratic Republic of Congo,2018,12.394
-Democratic Republic of Congo,2019,12.4111
+Democratic Republic of Dem. Rep. Congo,2000,14.4972
+Democratic Republic of Dem. Rep. Congo,2001,14.3679
+Democratic Republic of Dem. Rep. Congo,2002,14.2237
+Democratic Republic of Dem. Rep. Congo,2003,14.4037
+Democratic Republic of Dem. Rep. Congo,2004,14.2258
+Democratic Republic of Dem. Rep. Congo,2005,14.0561
+Democratic Republic of Dem. Rep. Congo,2006,13.8892
+Democratic Republic of Dem. Rep. Congo,2007,13.4235
+Democratic Republic of Dem. Rep. Congo,2008,13.4051
+Democratic Republic of Dem. Rep. Congo,2009,13.6352
+Democratic Republic of Dem. Rep. Congo,2010,13.4972
+Democratic Republic of Dem. Rep. Congo,2011,13.3243
+Democratic Republic of Dem. Rep. Congo,2012,13.0107
+Democratic Republic of Dem. Rep. Congo,2013,12.7731
+Democratic Republic of Dem. Rep. Congo,2014,12.5667
+Democratic Republic of Dem. Rep. Congo,2015,12.2673
+Democratic Republic of Dem. Rep. Congo,2016,12.0872
+Democratic Republic of Dem. Rep. Congo,2017,12.0358
+Democratic Republic of Dem. Rep. Congo,2018,12.394
+Democratic Republic of Dem. Rep. Congo,2019,12.4111
 Denmark,2000,12.5031
 Denmark,2001,12.3463
 Denmark,2002,11.184
@@ -979,46 +979,46 @@ Djibouti,2016,12.0823
 Djibouti,2017,12.3249
 Djibouti,2018,12.1704
 Djibouti,2019,11.9485
-Dominican Republic,2000,4.9
-Dominican Republic,2001,4.75
-Dominican Republic,2002,4.9
-Dominican Republic,2003,5.33
-Dominican Republic,2004,5.32
-Dominican Republic,2005,5.59
-Dominican Republic,2006,5.61
-Dominican Republic,2007,5.69
-Dominican Republic,2008,5.61
-Dominican Republic,2009,5.63
-Dominican Republic,2010,5.38
-Dominican Republic,2011,5.5
-Dominican Republic,2012,5.8
-Dominican Republic,2013,6.06
-Dominican Republic,2014,6.59
-Dominican Republic,2015,6.84
-Dominican Republic,2016,6.77
-Dominican Republic,2017,6.02
-Dominican Republic,2018,5.49
-Dominican Republic,2019,5.11
-East Timor,2000,4.88
-East Timor,2001,4.94
-East Timor,2002,4.64
-East Timor,2003,4.73
-East Timor,2004,4.38
-East Timor,2005,4.31
-East Timor,2006,3.9
-East Timor,2007,3.68
-East Timor,2008,3.42
-East Timor,2009,4.41
-East Timor,2010,4.15
-East Timor,2011,4.3
-East Timor,2012,4.28
-East Timor,2013,4.23
-East Timor,2014,4.24
-East Timor,2015,4.38
-East Timor,2016,4.45
-East Timor,2017,4.4
-East Timor,2018,4.46
-East Timor,2019,4.53
+Dominican Rep.,2000,4.9
+Dominican Rep.,2001,4.75
+Dominican Rep.,2002,4.9
+Dominican Rep.,2003,5.33
+Dominican Rep.,2004,5.32
+Dominican Rep.,2005,5.59
+Dominican Rep.,2006,5.61
+Dominican Rep.,2007,5.69
+Dominican Rep.,2008,5.61
+Dominican Rep.,2009,5.63
+Dominican Rep.,2010,5.38
+Dominican Rep.,2011,5.5
+Dominican Rep.,2012,5.8
+Dominican Rep.,2013,6.06
+Dominican Rep.,2014,6.59
+Dominican Rep.,2015,6.84
+Dominican Rep.,2016,6.77
+Dominican Rep.,2017,6.02
+Dominican Rep.,2018,5.49
+Dominican Rep.,2019,5.11
+Timor-Leste,2000,4.88
+Timor-Leste,2001,4.94
+Timor-Leste,2002,4.64
+Timor-Leste,2003,4.73
+Timor-Leste,2004,4.38
+Timor-Leste,2005,4.31
+Timor-Leste,2006,3.9
+Timor-Leste,2007,3.68
+Timor-Leste,2008,3.42
+Timor-Leste,2009,4.41
+Timor-Leste,2010,4.15
+Timor-Leste,2011,4.3
+Timor-Leste,2012,4.28
+Timor-Leste,2013,4.23
+Timor-Leste,2014,4.24
+Timor-Leste,2015,4.38
+Timor-Leste,2016,4.45
+Timor-Leste,2017,4.4
+Timor-Leste,2018,4.46
+Timor-Leste,2019,4.53
 Eastern Mediterranean,2000,7.68
 Eastern Mediterranean,2001,7.66
 Eastern Mediterranean,2002,7.58
@@ -1099,26 +1099,26 @@ El Salvador,2016,5.77
 El Salvador,2017,6.16
 El Salvador,2018,6.07
 El Salvador,2019,6.11
-Equatorial Guinea,2000,19.3515
-Equatorial Guinea,2001,17.6288
-Equatorial Guinea,2002,15.8146
-Equatorial Guinea,2003,15.3122
-Equatorial Guinea,2004,14.6191
-Equatorial Guinea,2005,14.1133
-Equatorial Guinea,2006,14.4147
-Equatorial Guinea,2007,14.1781
-Equatorial Guinea,2008,13.9478
-Equatorial Guinea,2009,13.8911
-Equatorial Guinea,2010,15.2741
-Equatorial Guinea,2011,16.6444
-Equatorial Guinea,2012,15.5275
-Equatorial Guinea,2013,13.7569
-Equatorial Guinea,2014,14.2177
-Equatorial Guinea,2015,15.3251
-Equatorial Guinea,2016,14.9665
-Equatorial Guinea,2017,13.1624
-Equatorial Guinea,2018,14.0611
-Equatorial Guinea,2019,13.5086
+Eq. Guinea,2000,19.3515
+Eq. Guinea,2001,17.6288
+Eq. Guinea,2002,15.8146
+Eq. Guinea,2003,15.3122
+Eq. Guinea,2004,14.6191
+Eq. Guinea,2005,14.1133
+Eq. Guinea,2006,14.4147
+Eq. Guinea,2007,14.1781
+Eq. Guinea,2008,13.9478
+Eq. Guinea,2009,13.8911
+Eq. Guinea,2010,15.2741
+Eq. Guinea,2011,16.6444
+Eq. Guinea,2012,15.5275
+Eq. Guinea,2013,13.7569
+Eq. Guinea,2014,14.2177
+Eq. Guinea,2015,15.3251
+Eq. Guinea,2016,14.9665
+Eq. Guinea,2017,13.1624
+Eq. Guinea,2018,14.0611
+Eq. Guinea,2019,13.5086
 Eritrea,2000,23.4102
 Eritrea,2001,22.4824
 Eritrea,2002,22.0685
@@ -2579,26 +2579,26 @@ North Korea,2016,9.24
 North Korea,2017,8.65
 North Korea,2018,8.19
 North Korea,2019,8.2
-North Macedonia,2000,8.66
-North Macedonia,2001,11.8735
-North Macedonia,2002,9
-North Macedonia,2003,8.27
-North Macedonia,2004,9.43
-North Macedonia,2005,7.65
-North Macedonia,2006,8.47
-North Macedonia,2007,8.07
-North Macedonia,2008,7.93
-North Macedonia,2009,8.11
-North Macedonia,2010,5.82
-North Macedonia,2011,5.91
-North Macedonia,2012,8.15
-North Macedonia,2013,8.05
-North Macedonia,2014,7.43
-North Macedonia,2015,7.28
-North Macedonia,2016,7.27
-North Macedonia,2017,7.23
-North Macedonia,2018,7.22
-North Macedonia,2019,7.15
+Macedonia,2000,8.66
+Macedonia,2001,11.8735
+Macedonia,2002,9
+Macedonia,2003,8.27
+Macedonia,2004,9.43
+Macedonia,2005,7.65
+Macedonia,2006,8.47
+Macedonia,2007,8.07
+Macedonia,2008,7.93
+Macedonia,2009,8.11
+Macedonia,2010,5.82
+Macedonia,2011,5.91
+Macedonia,2012,8.15
+Macedonia,2013,8.05
+Macedonia,2014,7.43
+Macedonia,2015,7.28
+Macedonia,2016,7.27
+Macedonia,2017,7.23
+Macedonia,2018,7.22
+Macedonia,2019,7.15
 Norway,2000,13.0216
 Norway,2001,13.1714
 Norway,2002,11.014
@@ -3199,26 +3199,26 @@ South Korea,2016,20.4869
 South Korea,2017,19.3101
 South Korea,2018,21.272
 South Korea,2019,21.1625
-South Sudan,2000,7.89
-South Sudan,2001,7.44
-South Sudan,2002,7.26
-South Sudan,2003,7.26
-South Sudan,2004,7.23
-South Sudan,2005,7.1
-South Sudan,2006,7.08
-South Sudan,2007,7
-South Sudan,2008,6.86
-South Sudan,2009,6.71
-South Sudan,2010,6.64
-South Sudan,2011,6.61
-South Sudan,2012,6.71
-South Sudan,2013,6.47
-South Sudan,2014,6.22
-South Sudan,2015,6.41
-South Sudan,2016,6.48
-South Sudan,2017,6.41
-South Sudan,2018,6.65
-South Sudan,2019,6.69
+S. Sudan,2000,7.89
+S. Sudan,2001,7.44
+S. Sudan,2002,7.26
+S. Sudan,2003,7.26
+S. Sudan,2004,7.23
+S. Sudan,2005,7.1
+S. Sudan,2006,7.08
+S. Sudan,2007,7
+S. Sudan,2008,6.86
+S. Sudan,2009,6.71
+S. Sudan,2010,6.64
+S. Sudan,2011,6.61
+S. Sudan,2012,6.71
+S. Sudan,2013,6.47
+S. Sudan,2014,6.22
+S. Sudan,2015,6.41
+S. Sudan,2016,6.48
+S. Sudan,2017,6.41
+S. Sudan,2018,6.65
+S. Sudan,2019,6.69
 South-East Asia,2000,15.108
 South-East Asia,2001,14.653
 South-East Asia,2002,14.2571
