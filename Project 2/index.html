@@ -1,251 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Global Deaths</title>
-    <link rel="stylesheet" type="text/css" href="titleImg.css">
+    <link rel="stylesheet" type="text/css" href="titleImg.css" />
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
     <script src="charts/vega_lite_vis.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="pure-u-1">
-        <img src="images/title.jpg" />
+      <img src="images/title.jpg" />
     </div>
-    <h1 class="title"><b>GLOBAL DEATHS</b></h1>
+    <h1 class="title"><b>GLOBAL MORTALITY INSIGHTS</b></h1>
     <div class="container-row">
-        <p class="side-padding"></p>
-        <img class="container-icon" src="images/care-icon-left.png"/>
-        <p class="container" style="text-align: left;">Global death encompasses <b>mortality across the world</b>, influenced by numerous factors, including healthcare access, diseases prevalence, socioeconomic, lifestyles, and environmental conditions.<br><br>This grave public health concern impacts individuals of diverse ages, genders, and backgrounds. </p>
-        <p class="container" style="text-align: left;">The datasets have been sourced from Kaggle and WHO, comprising information on <b>worldwide deaths</b> spanning the years 1950 to 2019.<br><br>The forthcoming statistics aim to provide comprehensive insights, fostering <b>greater awareness</b>.</p>
-        <img class="container-icon" src="images/death-icon-right.png"/>
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
+      <img class="container-icon" src="images/care-icon-left.png" />
+      <p class="container" style="text-align: left">
+        Global death encompasses <b>mortality across the world</b>, influenced
+        by numerous factors, including healthcare access, diseases prevalence,
+        socioeconomic, lifestyles, and environmental conditions.<br /><br />We
+        will also delve deeply into the pressing public health issue of
+        <b>suicides</b>, highlighting its impact on individuals of all age
+        groups, genders, and backgrounds.
+      </p>
+      <p class="container" style="text-align: left">
+        The datasets have been sourced from Kaggle and WHO, comprising
+        information on <b>worldwide deaths</b> and
+        <b>suicide-related deaths</b> spanning the years 1950 to 2019.<br /><br />The
+        forthcoming statistics aim to provide comprehensive insights, fostering
+        <b>greater awareness</b>.
+      </p>
+      <img class="container-icon" src="images/death-icon-right.png" />
+      <p class="side-padding"></p>
     </div>
 
-    <hr>
-    <br>
-    
+    <hr />
+    <br />
+
     <!-- first row -->
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <img class="container-numbering" src="images/1-icon.png"/>
-        <p class="container"><b>GLOBAL DEATH RATE FROM 1985 TO 2019</b></p>
+      <img class="container-numbering" src="images/1-icon.png" />
+      <p class="container"><b>GLOBAL DEATH RATE FROM 1985 TO 2019</b></p>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">To begin, let's examine the global <b>death rate (per 100,000 population)</b>. As shown in the choropleth map below, in 2019, <b>Lithuania</b> and <b>Uruguay</b> have the <b> highest death rate (per 100,000 population)</b>.</p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        To begin, let's examine the global
+        <b>death rate (per 100,000 population)</b>. As shown in the choropleth
+        map below, in 2019, <b>Lithuania</b> and <b>Uruguay</b> have the
+        <b> highest death rate (per 100,000 population)</b>.
+      </p>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart2" style="width: 100%; height: 400px; text-align: center; font-size: 12; font-family: Montserrat, sans-serif; color: #444444;"></div>
-        
-        <p class="side-padding"></p>
+      <p class="container-numbering-padding"></p>
+      <div
+        id="chart2"
+        style="
+          width: 100%;
+          height: 400px;
+          text-align: center;
+          font-size: 12;
+          font-family: Montserrat, sans-serif;
+          color: #444444;
+        "
+      ></div>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-next-row"></div>
-
 
     <!-- 2nd row -->
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <img class="container-numbering" src="images/2-icon.png"/>
-        <p class="container"><b>COUNTRIES WITH THE <span style="color: #ffa760;">HIGHEST</span> & <span style="color: #60b2ff;">LOWEST</span> TOTAL DEATHS IN 2019</b></p>
-        
-        <img class="container-numbering" src="images/3-icon.png"/>
-        <p class="container"><b>TOTAL DEATHS BY CONTINENTS</b></p>
+      <img class="container-numbering" src="images/2-icon.png" />
+      <p class="container">
+        <b
+          >COUNTRIES WITH THE <span style="color: #ffa760">HIGHEST</span> &
+          <span style="color: #60b2ff">LOWEST</span> TOTAL DEATHS IN 2019</b
+        >
+      </p>
 
-        <p class="side-padding"></p>
+      <img class="container-numbering" src="images/3-icon.png" />
+      <p class="container"><b>TOTAL DEATHS BY CONTINENTS</b></p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">Now, let's focus on the <b>top 10</b> and <b>bottom 10 countries</b> by mortality numbers in 2019. As shown in the bar chart below, <b>China</b> has the <span style="color: #ffa760;">highest</span> total deaths, while <b>Iceland</b> has the <span style="color: #60b2ff;">lowest</span> total deaths.</p>
-        
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">The pie chart presented below illustrates the cumulative death counts for each continent. It's evident from the chart that <b>Asia</b> has the <b>highest</b> total number of deaths, while <b>Australia</b> has the <b>lowest</b>.</p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        Now, let's focus on the <b>top 10</b> and <b>bottom 10 countries</b> by
+        mortality numbers in 2019. As shown in the bar chart below,
+        <b>China</b> has the
+        <span style="color: #ffa760"><b>highest</b></span> total deaths, while
+        <b>Iceland</b> has the
+        <span style="color: #60b2ff"><b>lowest</b></span> total deaths.
+      </p>
 
-        <p class="side-padding"></p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        The pie chart below illustrates the cumulative death counts for each
+        continent. It's evident from the chart that
+        <span style="color: #f58518"><b>Asia</b></span> has the
+        <b>highest</b> total number of deaths, while
+        <span style="color: #e45756"><b>Australia</b></span> has the
+        <b>lowest</b>.
+      </p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart1" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart1" style="width: 50%; height: 400px"></div>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart6" style="width: 50%; height: 400px;"></div>
-        
-        <p class="side-padding"></p>
+      <p class="container-numbering-padding"></p>
+      <div id="chart6" style="width: 50%; height: 400px"></div>
+
+      <p class="side-padding"></p>
     </div>
-    
+
     <div class="container-next-row"></div>
-
 
     <!-- 3rd row -->
     <div class="container-row">
-        <p class="side-padding"></p>
-        
-        <!-- <img class="container-numbering" src="images/4-icon.png"/>
-        <p class="container"><b>XXX</b></p> -->
-        
-        <img class="container-numbering" src="images/4-icon.png"/>
-        <p class="container"><b>TOP 4 CAUSES OF DEATH IN EACH CONTINENT</b></p>
+      <p class="side-padding"></p>
 
-        <p class="side-padding"></p>
+      <img class="container-numbering" src="images/4-icon.png" />
+      <p class="container"><b>TOP 4 CAUSES OF DEATH IN EACH CONTINENT</b></p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <!-- <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">XXX</p> -->
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        Upon examining the statistics, one might ponder the factors behind these
+        fatalities. Now, let's delve into the
+        <b>top 4 primary causes of death</b> of each continent.
+      </p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">Upon examining the statistics, one might ponder the factors behind these fatalities.<br/>Now, let's delve into the primary causes of death on each continent, starting with the top 4.</p>
-
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <!-- <p class="container-numbering-padding"></p>
-        <div id="chart6" style="width: 50%; height: 400px;"></div> -->
+      <p class="container-numbering-padding"></p>
+      <div id="chart4" style="width: 100%; height: 400px"></div>
 
-        <p class="container-numbering-padding"></p> 
-        <div id="chart4" style="width: 100%; height: 400px;"></div>
-
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
-    
+
     <div class="container-next-row"></div>
-
 
     <!-- 4th row -->
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <img class="container-numbering" src="images/6-icon.png"/>
-        <p class="container"><b>GLOBAL SUICIDE DEATH BY <span style="color: #60b2ff;">GEN</span><span style="color: #ffa760;">DER</span></b></p>
-        
-        <img class="container-numbering" src="images/7-icon.png"/>
-        <p class="container"><b>XXX</b></p>
-        
-        <p class="side-padding"></p>
+      <img class="container-numbering" src="images/5-icon.png" />
+      <p class="container">
+        <b
+          >GLOBAL SUICIDE TREND BY <span style="color: #60b2ff">GEN</span
+          ><span style="color: #ffa760">DER</span> FROM 2000 TO 2020</b
+        >
+      </p>
+
+      <img class="container-numbering" src="images/6-icon.png" />
+      <p class="container">
+        <b
+          >SUICIDE DEATHS BY <span style="color: #60b2ff">GEN</span
+          ><span style="color: #ffa760">DER</span> & AGE GROUPS</b
+        >
+      </p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">With the rising prevalence of suicide-related news, it's natural to develop an interest in the actual suicide figures. Let's proceed to visualize the suicides categorised by gender over the years.<br/>As illustrated in the chart below, male suicides significantly outnumber female suicides. While the trend in male suicides is gradually decreasing, the female suicide rate remains relatively stable.</p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        With the rising prevalence of suicide-related news, it's natural to
+        develop an interest in the actual suicide figures. Let's proceed to
+        visualize the suicides categorised by gender over the years.<br />As
+        illustrated in the chart below, male suicides significantly outnumber
+        female suicides. While the trend in male suicides is gradually
+        decreasing, the female suicide rate remains relatively stable.
+      </p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;"></p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        In the bubble chart presented,
+        <b>male suicides surpassed female suicides</b> across
+        <b>all age groups</b>, with a noteworthy concentration occurring between
+        the <b>ages of 20 to 69</b>. This phenomenon could be associated with
+        occupational stress.
+      </p>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart3" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart3" style="width: 50%; height: 400px"></div>
 
-        <p class="container-numbering-padding"></p> 
-        <div id="chart7" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart9" style="width: 50%; height: 400px"></div>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
-    
+
     <div class="container-next-row"></div>
-
 
     <!-- 5th row -->
     <div class="container-row">
-        <p class="side-padding"></p>
-        
-        <img class="container-numbering" src="images/5-icon.png"/>
-        <p class="container"><b>PHYSICAL HEALTH & MENTAL HEALTH EXPENDITURE OF<br/>AUSTRALIA & MALAYSIA 2007-2014</b></p>
-        
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
+
+      <img class="container-numbering" src="images/7-icon.png" />
+      <p class="container">
+        <b
+          >PHYSICAL & MENTAL HEALTH EXPENDITURE OF AUSTRALIA & MALAYSIA FROM
+          2007 TO 2014</b
+        >
+      </p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;">Let's examine the healthcare spending, both in terms of physical and mental health, allocated by the Australian and Malaysian governments throughout the years spanning from 2007 to 2014.</p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left">
+        Let's examine the <b>healthcare spending</b>, both in terms of
+        <b>physical</b> and <b>mental</b> health, allocated by the
+        <b>Australian and Malaysian governments</b> throughout the years
+        spanning from 2007 to 2014. From the waterfall charts below, we can
+        observe that that <b>both nations</b> have experienced a general
+        <b>upward trend</b> in healthcare expenditures.
+      </p>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart5" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart5" style="width: 50%; height: 400px"></div>
 
-        <p class="container-numbering-padding"></p> 
-        <div id="chart8" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart8" style="width: 50%; height: 400px"></div>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
-    
+
     <div class="container-next-row"></div>
 
-       <!-- 6th row -->
-       <div class="container-row">
-        <p class="side-padding"></p>
-        
-        <img class="container-numbering" src="images/5-icon.png"/>
-        <p class="container"><b>SUICIDE DEATHS BY <span style="color: #60b2ff;">GEN</span><span style="color: #ffa760;">DER</span> 1950-2019</b></p>
-        
-        <img class="container-numbering" src="images/5-icon.png"/>
-        <p class="container"><b>XXX</b></p>
-        
-        <p class="side-padding"></p>
+    <!-- 6th row -->
+    <div class="container-row">
+      <p class="side-padding"></p>
+
+      <img class="container-numbering" src="images/8-icon.png" />
+      <p class="container"><b>XXX</b></p>
+
+      <img class="container-numbering" src="images/5-icon.png" />
+      <p class="container"><b>XXX</b></p>
+
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <p class="container" style="text-align: left;"></p>
+      <p class="container-numbering-padding"></p>
+      <p class="container" style="text-align: left"></p>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
 
     <div class="container-row">
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
 
-        <p class="container-numbering-padding"></p>
-        <div id="chart9" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart9" style="width: 50%; height: 400px"></div>
 
-        <p class="container-numbering-padding"></p> 
-        <div id="chart8" style="width: 50%; height: 400px;"></div>
+      <p class="container-numbering-padding"></p>
+      <div id="chart8" style="width: 50%; height: 400px"></div>
 
-        <p class="side-padding"></p>
+      <p class="side-padding"></p>
     </div>
-    
+
     <div class="container-next-row"></div>
 
-</body>
+    <hr />
+    <br />
+    <h2>BIBLIOGRAPHY</h2>
+    <br />
+    <p class="bibliography">
+      Anand, K. (2023). WHO Suicide Data (1950-2021). Retrieved from
+      https://www.kaggle.com/datasets/kumaranand05/who-suicide-data-1950-2021
+    </p>
+    <p class="bibliography">
+      Fernando, R. (2022). Health Expenditure and Suicide Rates [2000-2019].
+      Retrieved from
+      https://www.kaggle.com/datasets/fernandoretamales/health-expenditure-and-suicide-rates
+    </p>
+    <p class="bibliography">
+      Sourav, B. (2022). Cause of Deaths around the World (Historical Data).
+      Retrieved from
+      https://www.kaggle.com/datasets/iamsouravbanerjee/cause-of-deaths-around-the-world
+    </p>
+    <p class="bibliography">
+      Dhamodharan, R. (2021). Adult mortality rate. Retrieved from
+      https://www.kaggle.com/datasets/dhamur/adult-mortality-rate
+    </p>
+    <p class="bibliography">
+      World Health Organization. (2023). WHO Mortality Database. Retrieved from
+      https://www.who.int/data/data-collection-tools/who-mortality-database
+    </p>
+
+    <p class="authorship">
+      Visualisation by Pang Wai Qi (Student ID: 31861474) for FIT3179 Data
+      Visualisation 2, Monash University Malaysia.<br />
+    </p>
+  </body>
 </html>

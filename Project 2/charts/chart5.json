@@ -1,123 +1,123 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-        "url" : "data/healthExpAUMY.csv"
-    },
-    "title": "Health Expenditure",
-    "width": "container",
-    "height": "container",
-    "params": [
-        {
-            "name": "selected_country",
-            "bind": {
-                "input": "select",
-                "options": [null,"Australia","Malaysia"],
-                "labels": ["Select a country","Australia", "Malaysia"],
-                "name": "Country: "
-            }
-        }
-    ],
-    "transform": [
-      {"filter": "datum.Country == selected_country"},
-      {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
-      {"window": [{"op": "lead", "field": "label", "as": "lead"}]},
-      {
-        "calculate": "datum.lead === null ? datum.label : datum.lead",
-        "as": "lead"
-      },
-      {
-        "calculate": "datum.label === 'End' ? 0 : datum.sum - datum.amount",
-        "as": "previous_sum"
-      },
-      {
-        "calculate": "(datum.label !== 'Begin' && datum.label !== 'End' && datum.amount > 0 ? '+' : '') + datum.amount",
-        "as": "text_amount"
-      },
-      {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"},
-      {
-        "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
-        "as": "sum_dec"
-      },
-      {
-        "calculate": "datum.sum > datum.previous_sum ? datum.sum : ''",
-        "as": "sum_inc"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/healthExpAUMY.csv"
+  },
+  "title": "Health Expenditure",
+  "width": "container",
+  "height": "container",
+  "params": [
+    {
+      "name": "selected_country",
+      "bind": {
+        "input": "select",
+        "options": [null, "Australia", "Malaysia"],
+        "labels": ["Select a country", "Australia", "Malaysia"],
+        "name": "Country: "
       }
-    ],
-    "encoding": {
-      "x": {
-        "field": "label",
-        "type": "ordinal",
-        "sort": null,
-        "axis": {"labelAngle": 0, "title": "Years"},
-        "title": "Year"
-      }
+    }
+  ],
+  "transform": [
+    { "filter": "datum.Country == selected_country" },
+    { "window": [{ "op": "sum", "field": "amount", "as": "sum" }] },
+    { "window": [{ "op": "lead", "field": "label", "as": "lead" }] },
+    {
+      "calculate": "datum.lead === null ? datum.label : datum.lead",
+      "as": "lead"
     },
-    "layer": [
-      {
-        "mark": {"type": "bar", "size": 45},
-        "encoding": {
-          "y": {
-            "field": "previous_sum",
-            "type": "quantitative",
-            "title": "Health Expenditure (%)"
-          },
-          "y2": {"field": "sum"},
-          "color": {
-            "condition": [
-              {
-                "test": "datum.label === 'Begin' || datum.label === 'End'",
-                "value": "#ffa760"
-              },
-              {"test": "datum.sum < datum.previous_sum", "value": "#ffa760"}
-            ],
-            "value": "#60b2ff"
-          }
-        }
-      },
-      {
-        "mark": {
-          "type": "rule",
-          "color": "#404040",
-          "opacity": 1,
-          "strokeWidth": 2,
-          "xOffset": -22.5,
-          "x2Offset": 22.5
+    {
+      "calculate": "datum.label === 'End' ? 0 : datum.sum - datum.amount",
+      "as": "previous_sum"
+    },
+    {
+      "calculate": "(datum.label !== 'Begin' && datum.label !== 'End' && datum.amount > 0 ? '+' : '') + datum.amount",
+      "as": "text_amount"
+    },
+    { "calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center" },
+    {
+      "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
+      "as": "sum_dec"
+    },
+    {
+      "calculate": "datum.sum > datum.previous_sum ? datum.sum : ''",
+      "as": "sum_inc"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "label",
+      "type": "ordinal",
+      "sort": null,
+      "axis": { "labelAngle": 0, "title": "Years" },
+      "title": "Year"
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "bar", "size": 45 },
+      "encoding": {
+        "y": {
+          "field": "previous_sum",
+          "type": "quantitative",
+          "title": "Health Expenditure (%)"
         },
-        "encoding": {
-          "x2": {"field": "lead"},
-          "y": {"field": "sum", "type": "quantitative"}
-        }
-      },
-      {
-        "mark": {"type": "text", "dy": -4, "baseline": "bottom"},
-        "encoding": {
-          "y": {"field": "sum_inc", "type": "quantitative"},
-          "text": {"field": "sum_inc", "type": "nominal", "format": ".2f"}
-        }
-      },
-      {
-        "mark": {"type": "text", "dy": 4, "baseline": "top"},
-        "encoding": {
-          "y": {"field": "sum_dec", "type": "quantitative"},
-          "text": {"field": "sum_dec", "type": "nominal"}
-        }
-      },
-      {
-        "mark": {"type": "text", "fontWeight": "bold", "baseline": "middle"},
-        "encoding": {
-          "y": {"field": "center", "type": "quantitative"},
-          "text": {"field": "text_amount", "type": "nominal", "format": ".2f"},
-          "color": {
-            "condition": [
-              {
-                "test": "datum.label === 'Begin' || datum.label === 'End'",
-                "value": "#725a30"
-              }
-            ],
-            "value": "white"
-          }
+        "y2": { "field": "sum" },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.label === 'Begin' || datum.label === 'End'",
+              "value": "#ffa760"
+            },
+            { "test": "datum.sum < datum.previous_sum", "value": "#ffa760" }
+          ],
+          "value": "#60b2ff"
         }
       }
-    ],
-    "config": {"text": {"fontWeight": "bold", "color": "#404040"}}
-  }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#404040",
+        "opacity": 1,
+        "strokeWidth": 2,
+        "xOffset": -22.5,
+        "x2Offset": 22.5
+      },
+      "encoding": {
+        "x2": { "field": "lead" },
+        "y": { "field": "sum", "type": "quantitative" }
+      }
+    },
+    {
+      "mark": { "type": "text", "dy": -4, "baseline": "bottom" },
+      "encoding": {
+        "y": { "field": "sum_inc", "type": "quantitative" },
+        "text": { "field": "sum_inc", "type": "nominal", "format": ".2f" }
+      }
+    },
+    {
+      "mark": { "type": "text", "dy": 4, "baseline": "top" },
+      "encoding": {
+        "y": { "field": "sum_dec", "type": "quantitative" },
+        "text": { "field": "sum_dec", "type": "nominal" }
+      }
+    },
+    {
+      "mark": { "type": "text", "fontWeight": "bold", "baseline": "middle" },
+      "encoding": {
+        "y": { "field": "center", "type": "quantitative" },
+        "text": { "field": "text_amount", "type": "nominal", "format": ".2f" },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.label === 'Begin' || datum.label === 'End'",
+              "value": "#725a30"
+            }
+          ],
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": { "text": { "fontWeight": "bold", "color": "#404040" } }
+}
