@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "SCATTERPLOT MATRIX - ",
+  "repeat": {
+    "row": ["SuicideRatePer100000"],
+    "column": [
+      "Depressive disorders per 100000 people",
+      "Schizophrenia per 100000 people",
+      "Bipolar disorder per 100000 people",
+      "Eating disorders per 100000 people",
+      "Anxiety disorders per 100000 people"
+    ]
+  },
+  "transform": [{ "filter": { "param": "Year" } }],
+  "spec": {
+    "data": { "url": "data/suicidesmentalillness.json" },
+    "mark": "circle",
+    "params": [
+      {
+        "name": "brush",
+        "select": {
+          "type": "interval",
+          "resolve": "union",
+          "on": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "translate": "[mousedown[event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![event.shiftKey]"
+        }
+      },
+      {
+        "name": "Year",
+        "value": [{ "Year": 2000 }],
+        "select": {
+          "type": "point",
+          "fields": ["Year"]
+        },
+        "bind": {
+          "name": "Year ",
+          "input": "range",
+          "min": 2000,
+          "max": 2019,
+          "step": 1
+        }
+      },
+      {
+        "name": "hovered",
+        "select": {
+          "type": "point",
+          "fields": ["Country"],
+          "toggle": false,
+          "on": "mouseover"
+        }
+      },
+      {
+        "name": "clicked",
+        "select": { "type": "point", "fields": ["Country"] }
+      },
+      {
+        "name": "continent_highlight",
+        "select": { "type": "point", "fields": ["name"] },
+        "bind": "legend"
+      },
+      {
+        "name": "grid",
+        "select": {
+          "type": "interval",
+          "resolve": "global",
+          "translate": "[mousedown[!event.shiftKey], window:mouseup] > window:mousemove!",
+          "zoom": "wheel![!event.shiftKey]"
+        },
+        "bind": "scales"
+      }
+    ],
+    "encoding": {
+      "x": { "field": { "repeat": "column" }, "type": "quantitative" },
+      "y": {
+        "field": { "repeat": "row" },
+        "type": "quantitative",
+        "scale": { "domain": [0, 120] },
+        "axis": {
+          "minExtent": 30
+        },
+        "title": "Suicide Rate per 100,000 population"
+      },
+      "color": {
+        "condition": {
+          "param": "brush",
+          "field": "Continent",
+          "type": "nominal"
+        },
+        "value": "grey"
+      },
+      "tooltip": [
+        { "field": "Country", "title": "Country" },
+        { "field": "Year", "title": "Year" },
+        { "field": "SuicideRatePer100000", "title": "Suicide Rate" },
+        {
+          "field": "Depressive disorders per 100000 people",
+          "title": "Depressive disorders"
+        },
+        {
+          "field": "Schizophrenia per 100000 people",
+          "title": "Schizophrenia"
+        },
+        {
+          "field": "Bipolar disorder per 100000 people",
+          "title": "Bipolar disorder"
+        },
+        {
+          "field": "Eating disorders per 100000 people",
+          "title": "Eating disorders"
+        },
+        {
+          "field": "Anxiety disorders per 100000 people",
+          "title": "Anxiety disorders"
+        }
+      ]
+    }
+  }
+}

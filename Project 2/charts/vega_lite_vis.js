@@ -19,3 +19,5 @@ vegaEmbed('#chart9', "charts/chart9.json").then(function (result) {
 }).catch(console.error);
 vegaEmbed('#chart10', "charts/chart10.json").then(function (result) {
 }).catch(console.error);
+vegaEmbed('#chart11', "charts/chart11.json").then(function (result) {
+}).catch(console.error);
