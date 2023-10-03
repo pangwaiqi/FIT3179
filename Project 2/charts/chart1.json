@@ -1,5 +1,5 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
     "height": "container",
     "data": {
@@ -19,7 +19,7 @@
                     "field": "Rank_Category",
                     "type": "nominal",
                     "scale": {
-                        "range": ["#ffa760", "#60b2ff"] 
+                        "range": ["#60b2ff","#ffa760"] 
                     }
                 },
                 "tooltip": [
