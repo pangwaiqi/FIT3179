@@ -52,7 +52,6 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Use flexbox to create a row of containers */
 .container-row {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -64,7 +63,17 @@ p {
   font-weight: bold;
 }
 
-/* Style the individual containers */
+.container-title {
+    flex: 1; /* Distribute available space equally */
+    padding: 10px;
+    border: 1px solid #ffffff;
+    margin: 5px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 12px;
+  }
+  
 .container {
   flex: 1; /* Distribute available space equally */
   padding: 10px;

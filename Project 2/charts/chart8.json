@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "WATERFALL CHART - MENTAL HEALTH EXPENDITURE",
     "data": {
         "url" : "data/mhealthExpAUMY.csv"
     },

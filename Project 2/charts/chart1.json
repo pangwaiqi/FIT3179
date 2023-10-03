@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "BAR CHART - COUNTRIES WITH THE HIGHEST & LOWEST TOTAL DEATHS IN 2019",
     "width": "container",
     "height": "container",
     "data": {

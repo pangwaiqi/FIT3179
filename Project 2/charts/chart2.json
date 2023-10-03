@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "CHOROPLETH MAP - GLOBAL DEATH RATE FROM 1985 TO 2019",
     "width": "container",
     "height": "container",
     "data": {

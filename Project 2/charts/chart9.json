@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "BUBLE CHART - SUICIDE DEATHS BY GENDER & AGE GROUPS",
     "data": {
       "url": "data/suicidesByGenderAge.csv"
     },

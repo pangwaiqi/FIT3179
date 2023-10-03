@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "LINE CHART - GLOBAL SUICIDE TREND BY GENDER FROM 2000 TO 2020",
     "width": "container",
     "height": "container",
     "data": {"url": "data/suicidesByGender.csv"},

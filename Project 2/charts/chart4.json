@@ -1,5 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.0.json",
+    "description": "ALLUVIAL CHART - TOP 4 CAUSES OF DEATH IN EACH CONTINENT",
     "width": 1400,
     "height": 400,
     "autosize":"fit",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Beeswarm chart for Suicides by Year and Gender",
+    "description": "BEESWARM CHART?? - SUICIDES BY YEAR AND GENDER",
     "width": "container",
     "height": "container",
     "data": {
