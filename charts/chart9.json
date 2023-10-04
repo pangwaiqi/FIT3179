@@ -2,10 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "BUBBLE CHART - SUICIDE DEATHS BY GENDER & AGE GROUPS",
   "data": {
-    "url": "data/suicidesByGenderAge.csv"
+    "url": "data/totalSuicidesByGenderAge.csv"
   },
   "width": "container",
   "height": "container",
+  "transform": [
+    { "filter": "datum.Year == Year_selection" }],
   "layer": [
     {
       "mark": {
@@ -32,7 +34,7 @@
           "type": "quantitative",
           "title": "Suicide Deaths",
           "legend": { "clipHeight": 40 },
-          "scale": { "rangeMax": 5000 }
+          "scale": { "rangeMax": 5000, "domain": [0, 50000] }
         },
         "color": {
           "field": "Sex",
@@ -42,6 +44,7 @@
         },
         "tooltip": [
           { "field": "Sex", "title": "Gender" },
+          { "field": "Year", "title": "Year" },
           { "field": "Suicides", "title": "Suicide Count" }
         ]
       }
@@ -60,7 +63,8 @@
       "encoding": {
         "text": {
           "value": [
-            "Suicide fatalities among males surpass", "those among females across all age groups."
+            "Suicide fatalities among males surpass",
+            "those among females across all age groups."
           ]
         },
         "opacity": {
@@ -82,13 +86,27 @@
       "encoding": {
         "text": {
           "value": [
-            "Suicide counts notably peak in the age",
-            "range of 20 to 59 for both genders."
+            "Suicide counts overall peak in the age",
+            "range of 20 to 59 for both genders",
+            "thoughout the years."
           ]
         },
         "opacity": {
           "value": 0.3
         }
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 1950,
+      "bind": {
+        "input": "range",
+        "min": 1950,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
       }
     }
   ]
