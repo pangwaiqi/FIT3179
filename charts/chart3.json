@@ -29,6 +29,7 @@
         "xOffset": -120,
         "dy": 58,
         "yOffset": -120,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
@@ -42,10 +43,11 @@
         "xOffset": -120,
         "dy": 58,
         "yOffset": 50,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
-        "text": { "value": ["Suicide trend among women are relatively stable"] }
+        "text": { "value": ["Suicide trend among women is relatively stable"] }
       }
     },
     {
@@ -55,6 +57,7 @@
         "xOffset": 0,
         "dy": 58,
         "yOffset": -220,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {

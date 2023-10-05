@@ -197,6 +197,7 @@
         "xOffset": 120,
         "dy": 58,
         "yOffset": -60,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
@@ -219,6 +220,7 @@
         "xOffset": -30,
         "dy": 58,
         "yOffset": -40,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
@@ -241,6 +243,7 @@
         "xOffset": -10,
         "dy": 58,
         "yOffset": -90,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
@@ -268,6 +271,7 @@
         "xOffset": -30,
         "dy": 58,
         "yOffset": 5,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {

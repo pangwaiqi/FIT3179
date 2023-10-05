@@ -34,7 +34,7 @@
           "fields": ["Year"]
         },
         "bind": {
-          "name": "Year ",
+          "name": "Year: ",
           "input": "range",
           "min": 2000,
           "max": 2019,

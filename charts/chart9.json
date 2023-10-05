@@ -58,6 +58,7 @@
         "xOffset": -100,
         "yOffset": -140,
         "dy": 0,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {
@@ -81,6 +82,7 @@
         "xOffset": -100,
         "yOffset": 0,
         "dy": 0,
+        "fontStyle": "italic",
         "align": "left"
       },
       "encoding": {

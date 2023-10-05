@@ -36,6 +36,7 @@
         "dy": 58,
         "yOffset": 0,
         "align": "left",
+        "fontStyle": "italic",
         "fill": "black"
       },
       "encoding": {
@@ -50,6 +51,7 @@
         "dy": 58,
         "yOffset": -60,
         "align": "left",
+        "fontStyle": "italic",
         "fill": "black"
       },
       "encoding": {
