@@ -63,6 +63,34 @@
       "encoding": {
         "text": { "value": ["Suicide spike among", "the males in 2011"] }
       }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": 230,
+        "dy": 58,
+        "yOffset": -90,
+        "fontStyle": "italic",
+        "align": "left"
+      },
+      "encoding": {
+        "text": { "value": ["Significant", "decrease", "in 2020"] }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "xOffset": 230,
+        "dy": 58,
+        "yOffset": 60,
+        "fontStyle": "italic",
+        "align": "left"
+      },
+      "encoding": {
+        "text": { "value": ["Slight", "decrease", "in 2020"] }
+      }
     }
   ],
   "config": {

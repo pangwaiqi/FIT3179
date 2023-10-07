@@ -6,6 +6,17 @@
   "data": {
     "url": "data/globalDeathsRanking2019.csv"
   },
+  "transform": [
+    {
+      "joinaggregate": [
+        {
+          "op": "mean",
+          "field": "Avg",
+          "as": "AvgDeaths"
+        }
+      ]
+    }
+  ],
   "encoding": {
     "x": {
       "field": "Deaths_All_Types",
@@ -71,6 +82,31 @@
       "encoding": {
         "text": { "field": "Deaths_All_Types", "type": "quantitative" }
       }
+    },
+    {
+      "mark": { "type": "line", "color": "#ff0000", "size": 2 },
+      "encoding": {
+        "x": {
+          "aggregate": "average",
+          "field": "AvgDeaths",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+        "mark": {
+            "type": "text",
+            "dy": 0,
+            "yOffset": 0,
+            "xOffset": 50,
+            "fontStyle": "italic",
+            "align":"left"
+        },
+        "encoding": {
+            "text": {"value": ["Mean: 970574"]},
+            "color": {"value":"#ff0000"},
+            "opacity": {"condition":{"test": "datum.Country_Name == 'Greece'", "value":1}, "value":0}
+        }
     }
   ],
   "config": {
