@@ -196,9 +196,7 @@
         "type": "text",
         "fontSize": 10,
         "color": "black",
-        "fontStyle": "bold",
-        "stroke": "whitesmoke",
-        "strokeWidth": 0.015
+        "fontStyle": "bold"
       },
       "encoding": {
         "longitude": { "field": "longitude", "type": "quantitative" },
@@ -214,27 +212,80 @@
       }
     },
     {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "data/countryInfo.csv"
+            },
+            "key": "name",
+            "fields": ["latitude", "longitude"]
+          }
+        }
+      ],
       "mark": {
         "type": "text",
-        "color": "black",
         "fontSize": 10,
-        "dx": 10,
-        "xOffset": 230,
-        "yOffset": 30,
-        "dy": 0,
-        "fontStyle": "italic",
-        "align": "left"
+        "color": "black",
+        "fontStyle": "italic"
       },
       "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
         "text": {
           "value": [
-            "Malaysia and Australia's suicide rate",
-            "has remained low (its colour has always",
-            "been pale orange) throughout the years."
+            "Malaysia's suicide rate has remained",
+            "low (its colour has always been light",
+            "orange) throughout the years."
           ]
         },
         "opacity": {
-          "value": 0.025
+          "condition": {
+            "test": "datum['properties.NAME'] == 'Malaysia'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "data/countryInfo.csv"
+            },
+            "key": "name",
+            "fields": ["latitude", "longitude"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "color": "black",
+        "fontStyle": "italic",
+        "strokeWidth": 0.015
+      },
+      "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
+        "text": {
+          "value": [
+            "",
+            "Australia's suicide rate has remained",
+            "low (its colour has always been light",
+            "orange) throughout the years"
+          ]
+        },
+        "opacity": {
+          "condition": {
+            "test": "datum['properties.NAME'] == 'Australia'",
+            "value": 1
+          },
+          "value": 0
         }
       }
     }

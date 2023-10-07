@@ -214,18 +214,27 @@
       }
     },
     {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "data/countryInfo.csv"
+            },
+            "key": "name",
+            "fields": ["latitude", "longitude"]
+          }
+        }
+      ],
       "mark": {
         "type": "text",
-        "color": "black",
         "fontSize": 10,
-        "fontStyle": "italic",
-        "dx": 10,
-        "xOffset": 200,
-        "yOffset": 0,
-        "dy": 0,
-        "align": "left"
+        "color": "black",
+        "fontStyle": "italic"
       },
       "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
         "text": {
           "value": [
             "Malaysia's death rate has remained",
@@ -234,32 +243,50 @@
           ]
         },
         "opacity": {
-          "value": 0.025
+          "condition": {
+            "test": "datum['properties.NAME'] == 'Malaysia'",
+            "value": 1
+          },
+          "value": 0
         }
       }
     },
     {
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "data/countryInfo.csv"
+            },
+            "key": "name",
+            "fields": ["latitude", "longitude"]
+          }
+        }
+      ],
       "mark": {
         "type": "text",
-        "color": "black",
         "fontSize": 10,
-        "fontStyle": "italic",
-        "dx": 10,
-        "xOffset": 200,
-        "yOffset": 90,
-        "dy": 0,
-        "align": "left"
+        "color": "black",
+        "fontStyle": "italic"
       },
       "encoding": {
+        "longitude": { "field": "longitude", "type": "quantitative" },
+        "latitude": { "field": "latitude", "type": "quantitative" },
         "text": {
           "value": [
+            "",
             "Australia's death rate has decreased",
             "throughout the years (from darker",
             "orange to lighter orange)"
           ]
         },
         "opacity": {
-          "value": 0.025
+          "condition": {
+            "test": "datum['properties.NAME'] == 'Australia'",
+            "value": 1
+          },
+          "value": 0
         }
       }
     }
