@@ -111,12 +111,12 @@ p {
 }
 
 .bibliography {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-bottom: 20px;
-  font-size: 16px;
-  text-align: left;
   font-family: "Montserrat", sans-serif;
+  color: #505050;
+  font-size: 12px;
 }
 
 .authorship {
