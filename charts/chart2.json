@@ -196,7 +196,8 @@
         "type": "text",
         "fontSize": 10,
         "color": "black",
-        "fontStyle": "bold",
+        "fontWeight":"bold",
+        "fontStyle": "italic",
         "stroke": "whitesmoke",
         "strokeWidth": 0.015
       },

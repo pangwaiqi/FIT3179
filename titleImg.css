@@ -57,6 +57,8 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #505050;
   font-size: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .bold {
@@ -72,6 +74,8 @@ p {
     font-family: "Montserrat", sans-serif;
     color: #000000;
     font-size: 12px;
+    align-items: center;
+    justify-content: center;
   }
   
 .container {
@@ -83,6 +87,7 @@ p {
   font-family: "Montserrat", sans-serif;
   color: #505050;
   font-size: 12px;
+  justify-content: center;
 }
 
 .container-icon {
@@ -91,11 +96,19 @@ p {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-numbering {
   height: 50px;
   width: 50px;
+}
+
+.in-text-icon {
+  height: 15px;
+  width: 15px;
+  justify-content: center;
 }
 
 .container-numbering-padding {
