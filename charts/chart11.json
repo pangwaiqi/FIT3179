@@ -68,6 +68,13 @@
           "zoom": "wheel![!event.shiftKey]"
         },
         "bind": "scales"
+      },
+      {
+        "name": "continent_filter",
+        "select": {
+          "type": "point",
+          "fields": ["Continent"]
+        }
       }
     ],
     "encoding": {
@@ -83,11 +90,11 @@
       },
       "color": {
         "condition": {
-          "param": "brush",
+          "param": "continent_filter",
           "field": "Continent",
           "type": "nominal"
         },
-        "value": "grey"
+        "value": "#ededed"
       },
       "tooltip": [
         { "field": "Country", "title": "Country" },
