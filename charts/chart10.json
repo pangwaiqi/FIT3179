@@ -196,7 +196,8 @@
         "type": "text",
         "fontSize": 10,
         "color": "black",
-        "fontStyle": "bold"
+        "fontStyle": "italic",
+        "fontWeight": "bold"
       },
       "encoding": {
         "longitude": { "field": "longitude", "type": "quantitative" },
