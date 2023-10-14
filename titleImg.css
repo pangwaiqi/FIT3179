@@ -35,20 +35,20 @@ body {
 h1 {
   text-align: center;
   color: #000000;
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
   text-align: center;
   color: #000000;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
 p {
   color: #444444;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -56,7 +56,7 @@ p {
   display: flex;
   font-family: "Montserrat", sans-serif;
   color: #505050;
-  font-size: 12px;
+  font-size: 14px;
   align-items: center;
   justify-content: center;
 }
@@ -66,18 +66,18 @@ p {
 }
 
 .container-title {
-    flex: 1; /* Distribute available space equally */
-    padding: 10px;
-    border: 1px solid #ffffff;
-    margin: 5px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    color: #000000;
-    font-size: 12px;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  flex: 1; /* Distribute available space equally */
+  padding: 10px;
+  border: 1px solid #ffffff;
+  margin: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   flex: 1; /* Distribute available space equally */
   padding: 10px;
@@ -86,7 +86,7 @@ p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #505050;
-  font-size: 12px;
+  font-size: 14px;
   justify-content: center;
 }
 
@@ -129,7 +129,7 @@ p {
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   color: #505050;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .authorship {
